@@ -20,11 +20,10 @@ public class HolidayFetchScheduler {
     /**
      * 每天00:00:00执行,更新次年节假日数据
      */
-    @Scheduled(cron = "0 */1 * * * ? ")
-//    @Scheduled(cron = "0 0 0 * * ?")
+    @Scheduled(cron = "0 0 0 * * ?")
     public void fetchHoliday(){
         try {
-//            Integer year = DateUtil.year(new Date()) + 1;
+            Integer year = DateUtil.year(new Date()) + 1;
             holidayService.modifyHolidayData(2009);
         } catch (Exception e) {
             e.printStackTrace();
