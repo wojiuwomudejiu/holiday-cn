@@ -1,0 +1,7 @@
+ai:
+  # 模型平台。目前仅支持智谱AI
+  platform: zhipu
+  # 模型名称,必须配置
+  chat-model: glm-4-plus
+  # apiKey。你的apiKey,必须配置
+  api-key: yourapikey
