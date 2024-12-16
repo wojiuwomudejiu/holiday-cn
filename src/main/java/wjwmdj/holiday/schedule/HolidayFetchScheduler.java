@@ -24,7 +24,7 @@ public class HolidayFetchScheduler {
     public void fetchHoliday(){
         try {
             Integer year = DateUtil.year(new Date()) + 1;
-            holidayService.modifyHolidayData(2009);
+            holidayService.modifyHolidayData(year);
         } catch (Exception e) {
             e.printStackTrace();
             log.error("fetchHoliday error! errorMsg:{}", e.getMessage());
