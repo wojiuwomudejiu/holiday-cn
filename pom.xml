@@ -10,7 +10,7 @@
     </parent>
     <groupId>wjwmdj.holiday</groupId>
     <artifactId>holiday-cn</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>holiday-cn</name>
     <description>holiday-cn</description>
 
