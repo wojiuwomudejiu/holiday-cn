@@ -13,7 +13,7 @@ public class HolidayInfo {
 
 
     @Description("节假日列表")
-    List<AiExtractHoliday> holidays;
+    List<AiExtractHoliday> holidayList;
 
     public Integer getYear() {
         return year;
@@ -31,12 +31,12 @@ public class HolidayInfo {
         this.version = version;
     }
 
-    public List<AiExtractHoliday> getHolidays() {
-        return holidays;
+    public List<AiExtractHoliday> getHolidayList() {
+        return holidayList;
     }
 
-    public void setHolidays(List<AiExtractHoliday> holidays) {
-        this.holidays = holidays;
+    public void setHolidayList(List<AiExtractHoliday> holidayList) {
+        this.holidayList = holidayList;
     }
 
     public static class AiExtractHoliday{

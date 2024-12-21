@@ -27,12 +27,8 @@ public class HolidayDiskStore implements HolidayStore {
 
     @Override
     public boolean store(HolidayInfo holidayInfo) {
-        Map<String, Object> storeData = new HashMap<>();
-        storeData.put("year", holidayInfo.getYear());
-        storeData.put("version", holidayInfo.getVersion());
-        storeData.put("holidayList", holidayInfo.getHolidays());
         File diskFile = FileUtil.file(createFilePath(holidayInfo.getYear()));
-        FileUtil.writeString(JSONUtil.toJsonStr(storeData), diskFile, "utf-8");
+        FileUtil.writeString(JSONUtil.toJsonStr(holidayInfo), diskFile, "utf-8");
         return true;
     }
 
